@@ -1,21 +1,11 @@
 package com.concord.test.crypto;
 
-import com.concord.test.crypto.CryptoService;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.MockitoAnnotations;
 
 public class CryptoServiceTest {
 
-    @InjectMocks
-    CryptoService cryptoService;
-
-    @Before
-    public void init() {
-        MockitoAnnotations.initMocks(this);
-    }
+    CryptoService cryptoService = new CryptoService();
 
     @Test
     public void encode() {

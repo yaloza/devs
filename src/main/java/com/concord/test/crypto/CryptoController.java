@@ -12,14 +12,12 @@ public class CryptoController {
     CryptoService cryptoService;
 
     @PostMapping("encrypt")
-    @ResponseBody
     public String encrypt(@RequestBody CryptoRequestModel request) {
         return cryptoService.encrypt(request.getStr());
 
     }
 
     @PostMapping("decrypt")
-    @ResponseBody
     public String decrypt(@RequestBody CryptoRequestModel request) {
         return cryptoService.decrypt(request.getStr());
 

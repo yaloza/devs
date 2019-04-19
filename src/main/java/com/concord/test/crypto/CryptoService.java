@@ -11,7 +11,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class CryptoService {
 
     @Value("${json.secret.key}")
-    public String secretKey;
+    String secretKey;
 
     private static final String ALGORITHM = "AES";
     private static final String UTF = "UTF-8";
